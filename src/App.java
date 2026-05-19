@@ -39,11 +39,17 @@ public class App {
         
         //Mostrar arreglo ya ordenado
         System.out.println("\nArreglo ordenado: ");
+
+        
         // Instancio el objeto de la clase BusquedaBinaria
         MetodosOrdenamiento printArreglo = new MetodosOrdenamiento();
+
+
         // Llamo al metodo sortByAge y lo uso para ordenar el arreglo
         printArreglo.sortByAge(persons);
-        // Imptimo el arreglo separado  por "|"
+
+
+        // Imprimo el arreglo separado  por "|"
         for( int i = 0; i < persons.length; i++){
             System.out.print(persons[i].getEdad());
             if(i < persons.length -1){
@@ -52,10 +58,16 @@ public class App {
         }
 
 
-
         // imprimir mediante la busqueda binaria
         BusquedaBinaria bBinaria = new BusquedaBinaria();
         int respuesta = bBinaria.findByAge(persons, 18);
+
+        // Ver que devuelve
+        // System.out.println(respuesta); 
+        // Me imprimio la casilla en la que estaba el valor 
+
+
+        // Validacion, ve si el valor buscado existe, si no te salta un mensaje de error 
         if (respuesta >= 0) {
             System.out.println( "\nLa persona con la edad 18 es " + persons[respuesta].getNombre() + "\n");
         } else{

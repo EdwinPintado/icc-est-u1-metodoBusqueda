@@ -1,18 +1,37 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# UNIVESIDAD POLITÉCNICA SALESIANA
 
-## Folder Structure
+- Busqueda binaria 
+---
+### Estudiante: Edwin Patricio Pintado Reinoso
+---
 
-The workspace contains two folders by default, where:
+### Fecha:  18/05/2026
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Descripción clase: 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Creación  de una clase llamada BusquedaBinaria, con el cual se buscó encontrar entre una lista de productos la posición dentro del arreglo en el cual se encontraba el articulo "Laptop", buscada por su nombre.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- El metodo usa tres parametros (bajo, alto y centro), con el cual pregunta si el valor buscado es menor o mayor al valor del centro y divide el arrego desde un numero anterior o superior al centro para obiar la parte en la que el valor buscado no se encuentra.
 
-## Dependency Management
+Pero esto solo es posible tras ordenar el arreglo a utilizar, en mi caso con bubbleSortAvz.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+### Fecha:  18/05/2026
+---
+
+## Descripción Practica2: 
+
+Creacion de un metodo de Busqueda Binaria, con la informacion aprendida en clase, que permita encontrar a una persona por su edad. 
+
+Por cada proceso debe muestrar el valor de los siguientrs parametros: 
+- bajo
+- alto
+- centro
+- valor del centro
+
+Ademas indicar que parte del arreglo se va usar en la siguiente parte de la busqueda.
+
+Tras concluir con la busqueda indicar a cual persona corresponde esa edad.

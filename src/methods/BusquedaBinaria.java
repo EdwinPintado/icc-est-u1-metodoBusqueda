@@ -37,8 +37,8 @@ public class BusquedaBinaria {
             int c = (bajo + alto) /2; 
 
             // imprimir los valores
-            String printArr = "\nbajo= " + bajo + "    alto= " + alto + "    centro= " + c +  "    valorCentro= " + person[c].getEdad();
-            System.out.print(printArr);
+            String printP = "\nbajo= " + bajo + "    alto= " + alto + "    centro= " + c +  "    valorCentro= " + person[c].getEdad();
+            System.out.print(printP);
 
             // comparamos con la clave
             if(person[c].getEdad() == edad){
