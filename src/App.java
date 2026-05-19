@@ -6,29 +6,19 @@ import models.Person;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Person[] persons = {
-            new Person("Pablo", 4),
-            new Person("Maria", 5),
-            new Person("Juan", 18),
-            new Person("David", 60),
-            new Person("Mateo", 25),
-            new Person("Diego", 12),
-            new Person("Ana", 8),
-            new Person("Alicia", 9),
-            new Person("Jaime", 40),
-        };
-
         // Arreglo sin ordenar de las edades
         // Bucle: imprime cada elemento del arreclo edades
         // despues el if imprime un "|" despues de cada elemento, el -1 para que no imprima despues del ultimo
         System.out.println("\nArreglo sin ordenar: ");
-        for( int i = 0; i < persons.length; i++){
-            System.out.print(persons[i].getEdad());
-            if(i < persons.length -1){
-                System.out.print(" | ");
+        Person[] persons = generatePersonsList();
+        for(int i = 0; i < persons.length;i++){
+            if(i<persons.length-1){
+                System.out.print(persons[i].getEdad() + " | ");
+            }else{
+                System.out.print(persons[i].getEdad());
             }
         }
-
+        
 
 
         //imprimir indicacion 
@@ -50,10 +40,11 @@ public class App {
 
 
         // Imprimo el arreglo separado  por "|"
-        for( int i = 0; i < persons.length; i++){
-            System.out.print(persons[i].getEdad());
-            if(i < persons.length -1){
-                System.out.print(" | ");
+        for(int i = 0; i < persons.length;i++){
+            if(i<persons.length-1){
+                System.out.print(persons[i].getEdad() + " | ");
+            }else{
+                System.out.print(persons[i].getEdad());
             }
         }
 
@@ -73,7 +64,23 @@ public class App {
         } else{
             System.out.println("\nNo se encontro\n");
         }
-        
+    }
+    
+
+     public static Person[] generatePersonsList(){
+            Person[] persons = new Person[9];
+            persons[0] = new Person("Pablo", 4);
+            persons[1] = new Person("Maria", 5);
+            persons[2] = new Person("Juan", 18);
+            persons[3] = new Person("David", 60);
+            persons[4] = new Person("Mateo", 25);
+            persons[5] = new Person("Diego", 12);
+            persons[6] = new Person("Ana", 8);
+            persons[7] = new Person("Alicia", 9);
+            persons[8] = new Person("Jaime", 40);
+            return persons;
+        }
+    
 
         // Product[] products = {
         //     new Product("Laptop", 20),
@@ -94,6 +101,4 @@ public class App {
         // } else{
         //     System.out.println("no se encontro");
         // }
-
-    }
 }
