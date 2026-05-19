@@ -26,12 +26,12 @@ Pero esto solo es posible tras ordenar el arreglo a utilizar, en mi caso con bub
 
 Creacion de un metodo de Busqueda Binaria, con la informacion aprendida en clase, que permita encontrar a una persona por su edad. 
 
-Por cada proceso debe muestrar el valor de los siguientrs parametros: 
+Por cada paso del proceso se deben muestrar el valor de los siguientrs parametros: 
 - bajo
 - alto
 - centro
 - valor del centro
 
-Ademas indicar que parte del arreglo se va usar en la siguiente parte de la busqueda.
+Ademas indicar que parte del arreglo se va usar en la siguiente parte de la busqueda (IZQUIERDA/DERECHA).
 
 Tras concluir con la busqueda indicar a cual persona corresponde esa edad.

@@ -66,11 +66,12 @@ public class BusquedaBinaria {
                 // Para que imprima el arreglo cuando el valor que buscamos esta en la izquierda
                 System.out.print("\n");
                 for( int i = bajo ; i <= alto; i++){
-                    System.out.print(person[i].getEdad());
-                    if(i <= alto)
-                        System.out.print(" | ");
+                    if(i <= alto){
+                        System.out.print(person[i].getEdad() + " | ");
+                    } else{
+                        System.out.print(person[i].getEdad());
+                    }     
                 }
-
             }
         }
         return -1; // n o encontrado
